@@ -1,6 +1,11 @@
 # Figma Make specific files (ignore during Vercel build)
 __figma__entrypoint__.ts
 
+# pnpm specific files (using npm on Vercel instead)
+pnpm-lock.yaml
+pnpm-workspace.yaml
+.pnpm-store/
+
 # Not needed for deployment
 .git/
 *.md
