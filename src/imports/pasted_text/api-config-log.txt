@@ -1,0 +1,67 @@
+🔧 API Configuration:
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90   Project ID: xdlmzstbeqakicqhijrk
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90   API Base: https://xdlmzstbeqakicqhijrk.supabase.co/functions/v1/make-server-9aaa8c9c
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90   Anon Key: ✅ Present
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 Testing Edge Function connection...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔧 API Configuration:
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90   Project ID: xdlmzstbeqakicqhijrk
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90   API Base: https://xdlmzstbeqakicqhijrk.supabase.co/functions/v1/make-server-9aaa8c9c
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90   Anon Key: ✅ Present
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 Testing Edge Function connection...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🏠 Home: Starting to load content...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 Testing Edge Function connection...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 Project ID: xdlmzstbeqakicqhijrk
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 API URL: https://xdlmzstbeqakicqhijrk.supabase.co/functions/v1/make-server-9aaa8c9c/health
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 12:58:14 AM [vite] (client) hmr update /src/app/pages/Settings.tsx, /src/styles/index.css
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 12:58:14 AM [vite] (client) hmr update /src/styles/index.css, /src/app/pages/Synopsis.tsx, /src/app/pages/Logline.tsx, /src/app/pages/PitchDeck.tsx, /src/app/pages/Home.tsx, /src/app/pages/Snippets.tsx, /src/app/pages/RequestScript.tsx, /src/app/pages/Settings.tsx, /src/app/pages/Author.tsx
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ Edge Function is responding: {status: 'ok', timestamp: '2026-03-23T00:58:16.531Z'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ Edge Function is responding: {status: 'ok', timestamp: '2026-03-23T00:58:16.816Z'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ❌ Failed to connect to Edge Function: TypeError: Failed to fetch
+    at code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90:9794
+    at testConnection (app-tlxbkaosdgrr2pnkxjwjrvw2mzveepjs4jxe22cb4durcwhx2tva.makeproxy-c.figma.site/src/app/App.tsx?t=1774227251859:34:32)
+    at app-tlxbkaosdgrr2pnkxjwjrvw2mzveepjs4jxe22cb4durcwhx2tva.makeproxy-c.figma.site/src/app/App.tsx?t=1774227251859:51:5
+    at TN (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:138396)
+    at T8 (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:151856)
+    at T7 (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:151634)
+    at T6 (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:151542)
+    at T4 (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:151420)
+    at S1 (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:163585)
+    at SQ (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:163247)
+    at code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:162379
+    at code_components_preview_iframe-1f2144f4d81fada2.min.js.br:65:9784
+    at V (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:61:1842)
+    at B (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:61:1559)
+    at MessagePort.eo (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:61:3433)
+(anonymous) @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90
+r @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:17
+testConnection @ App.tsx:35
+await in testConnection
+(anonymous) @ App.tsx:39
+TN @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37
+T8 @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37
+T7 @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37
+T6 @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37
+T4 @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37
+S1 @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37
+SQ @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37
+(anonymous) @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37
+(anonymous) @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:65
+V @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:61
+B @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:61
+eo @ code_components_preview_iframe-1f2144f4d81fada2.min.js.br:61Understand this error
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 Error loading content: TypeError: Failed to fetch
+    at code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90:9794
+    at Module.fetchContent (api.ts?t=1774227494294:23:26)
+    at loadContent (Home.tsx?t=1774227494294:40:17)
+    at Home.tsx?t=1774227494294:81:5
+    at TN (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:138396)
+    at T8 (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:151856)
+    at T7 (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:151634)
+    at T6 (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:151542)
+    at T4 (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:151420)
+    at S1 (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:163585)
+    at SQ (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:163247)
+    at code_components_preview_iframe-1f2144f4d81fada2.min.js.br:37:162379
+    at code_components_preview_iframe-1f2144f4d81fada2.min.js.br:65:9784
+    at V (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:61:1842)
+    at B (code_components_preview_iframe-1f2144f4d81fada2.min.js.br:61:1559)

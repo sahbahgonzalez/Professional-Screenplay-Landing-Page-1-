@@ -1,0 +1,98 @@
+🔧 API Configuration:
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90   Project ID: xdlmzstbeqakicqhijrk
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90   API Base: https://xdlmzstbeqakicqhijrk.supabase.co/functions/v1/make-server-9aaa8c9c
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90   Anon Key: ✅ Present
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 Testing Edge Function connection...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🏠 Home: Starting to load content...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 Testing Edge Function connection...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 Project ID: xdlmzstbeqakicqhijrk
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 API URL: https://xdlmzstbeqakicqhijrk.supabase.co/functions/v1/make-server-9aaa8c9c/health
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ Edge Function is responding: {status: 'ok', timestamp: '2026-03-23T03:27:24.067Z'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🏠 Home: Loaded content: {logline: 'After accidentally learning the world’s most guard…te training to keep himself and his family alive.', synopsis: 'Michael R. Riley is a decorated Special Forces vet…the truth is known, it can never be buried again.', synopsisThemes: Array(2), authorBio: {…}, posterImage: 'https://xdlmzstbeqakicqhijrk.supabase.co/storage/v…g5Nn0.Dkvs54-smCOleu_p5tSY77oI3cc2MXGKgb7taQfoLV8', …}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🏠 Home: Loaded snippets: [{…}]
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🏠 Home: Poster image URL: https://xdlmzstbeqakicqhijrk.supabase.co/storage/v1/object/sign/make-9aaa8c9c-images/images/1773533896346.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8wOTQzZDlhMS1lZThlLTQ2NmItOTM3Ny1jNmZlMjA5N2RkY2QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJtYWtlLTlhYWE4YzljLWltYWdlcy9pbWFnZXMvMTc3MzUzMzg5NjM0Ni5qcGciLCJpYXQiOjE3NzM1MzM4OTYsImV4cCI6MjA4ODg5Mzg5Nn0.Dkvs54-smCOleu_p5tSY77oI3cc2MXGKgb7taQfoLV8
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🏠 Home: Poster image type: string
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🏠 Home: Setting poster URL to: https://xdlmzstbeqakicqhijrk.supabase.co/storage/v1/object/sign/make-9aaa8c9c-images/images/1773533896346.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8wOTQzZDlhMS1lZThlLTQ2NmItOTM3Ny1jNmZlMjA5N2RkY2QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJtYWtlLTlhYWE4YzljLWltYWdlcy9pbWFnZXMvMTc3MzUzMzg5NjM0Ni5qcGciLCJpYXQiOjE3NzM1MzM4OTYsImV4cCI6MjA4ODg5Mzg5Nn0.Dkvs54-smCOleu_p5tSY77oI3cc2MXGKgb7taQfoLV8
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ Edge Function is responding: {status: 'ok', timestamp: '2026-03-23T03:27:24.322Z'}
+vendor-core-83c17265f2588e9e.min.js.br:63  GET https://www.figma.com/api/integrations/supabase/MVbdUaaTXV0pcdUGtwkKZH/edge_functions/make-server/logs 403 (Forbidden)
+(anonymous) @ vendor-core-83c17265f2588e9e.min.js.br:63
+h @ vendor-b38af67a2c6fcb29.min.js.br:3
+(anonymous) @ 7295-2317093baadd87fb.min.js.br:1318
+T @ 7295-2317093baadd87fb.min.js.br:1318
+await in T
+w @ 7295-2317093baadd87fb.min.js.br:1318
+k @ 7295-2317093baadd87fb.min.js.br:1318
+(anonymous) @ figma_app-c223861aff36f040.min.js.br:173
+validate @ figma_app-c223861aff36f040.min.js.br:229
+getFunctionLogs @ figma_app-c223861aff36f040.min.js.br:173
+fetch @ figma_app-c223861aff36f040.min.js.br:305
+p @ 7295-2317093baadd87fb.min.js.br:384
+await in p
+d @ vendor-b38af67a2c6fcb29.min.js.br:296
+_ @ vendor-b38af67a2c6fcb29.min.js.br:296
+h @ vendor-b38af67a2c6fcb29.min.js.br:296
+fetch @ vendor-b38af67a2c6fcb29.min.js.br:296
+executeFetch @ vendor-b38af67a2c6fcb29.min.js.br:296
+(anonymous) @ vendor-b38af67a2c6fcb29.min.js.br:296
+u @ vendor-core-83c17265f2588e9e.min.js.br:54
+setInterval
+(anonymous) @ vendor-core-83c17265f2588e9e.min.js.br:63
+updateRefetchInterval @ vendor-b38af67a2c6fcb29.min.js.br:296
+updateTimers @ vendor-b38af67a2c6fcb29.min.js.br:296
+onQueryUpdate @ vendor-b38af67a2c6fcb29.min.js.br:296
+(anonymous) @ vendor-b38af67a2c6fcb29.min.js.br:296
+(anonymous) @ vendor-b38af67a2c6fcb29.min.js.br:296
+batch @ vendor-b38af67a2c6fcb29.min.js.br:296
+dispatch @ vendor-b38af67a2c6fcb29.min.js.br:296
+setData @ vendor-b38af67a2c6fcb29.min.js.br:296
+onSuccess @ vendor-b38af67a2c6fcb29.min.js.br:296
+b @ vendor-b38af67a2c6fcb29.min.js.br:296
+Promise.then
+_ @ vendor-b38af67a2c6fcb29.min.js.br:296
+h @ vendor-b38af67a2c6fcb29.min.js.br:296
+fetch @ vendor-b38af67a2c6fcb29.min.js.br:296
+executeFetch @ vendor-b38af67a2c6fcb29.min.js.br:296
+(anonymous) @ vendor-b38af67a2c6fcb29.min.js.br:296
+u @ vendor-core-83c17265f2588e9e.min.js.br:54Understand this error
+api.ts:109  POST https://xdlmzstbeqakicqhijrk.supabase.co/functions/v1/make-server-9aaa8c9c/send-script-request 400 (Bad Request)
+sendScriptRequest @ api.ts:109
+handleSubmit @ RequestScript.tsx:55
+y @ code_components_prev…1fada2.min.js.br:25
+ik @ code_components_prev…1fada2.min.js.br:25
+iz @ code_components_prev…1fada2.min.js.br:25
+i$ @ code_components_prev…1fada2.min.js.br:25
+dP @ code_components_prev…1fada2.min.js.br:37
+dM @ code_components_prev…1fada2.min.js.br:37
+dG @ code_components_prev…1fada2.min.js.br:37
+dk @ code_components_prev…1fada2.min.js.br:37
+(anonymous) @ code_components_prev…1fada2.min.js.br:37
+SR @ code_components_prev…1fada2.min.js.br:37
+iR @ code_components_prev…1fada2.min.js.br:25
+dj @ code_components_prev…1fada2.min.js.br:37
+lO @ code_components_prev…1fada2.min.js.br:25
+lN @ code_components_prev…1fada2.min.js.br:25
+lv @ code_components_prev…1fada2.min.js.br:25Understand this error
+ Script request failed: {error: 'Contact email must be set to sgonzalez3276@eagle.f… Mikesurick@gmail.com. Please update in Settings.', currentEmail: 'Mikesurick@gmail.com', requiredEmail: 'sgonzalez3276@eagle.fgcu.edu'}
+r @ code_components_prev…1fada2.min.js.br:17
+error @ code_components_prev…1fada2.min.js.br:90
+sendScriptRequest @ api.ts:118
+await in sendScriptRequest
+handleSubmit @ RequestScript.tsx:55
+y @ code_components_prev…1fada2.min.js.br:25
+ik @ code_components_prev…1fada2.min.js.br:25
+iz @ code_components_prev…1fada2.min.js.br:25
+i$ @ code_components_prev…1fada2.min.js.br:25
+dP @ code_components_prev…1fada2.min.js.br:37
+dM @ code_components_prev…1fada2.min.js.br:37
+dG @ code_components_prev…1fada2.min.js.br:37
+dk @ code_components_prev…1fada2.min.js.br:37
+(anonymous) @ code_components_prev…1fada2.min.js.br:37
+SR @ code_components_prev…1fada2.min.js.br:37
+iR @ code_components_prev…1fada2.min.js.br:25
+dj @ code_components_prev…1fada2.min.js.br:37
+lO @ code_components_prev…1fada2.min.js.br:25
+lN @ code_components_prev…1fada2.min.js.br:25
+lv @ code_components_prev…1fada2.min.js.br:25Understand this error
+ Failed to send script request: Error: Contact email must be set to sgonzalez3276@eagle.fgcu.edu for testing. Current email: Mikesurick@gmail.com. Please update in Settings.
+    at Module.sendScriptRequest (api.ts:119:11)
+    at async handleSubmit (RequestScript.tsx:55:7)

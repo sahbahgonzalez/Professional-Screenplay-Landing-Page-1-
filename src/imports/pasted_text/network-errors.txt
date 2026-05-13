@@ -1,0 +1,71 @@
+Failed to load resource: net::ERR_NAME_NOT_RESOLVEDUnderstand this error
+code_components_preview_iframe-aee2937bf6889db9.min.js.br:90 ❌ Failed to connect to Edge Function: TypeError: Failed to fetch
+    at code_components_preview_iframe-aee2937bf6889db9.min.js.br:90:9794
+    at testConnection (App.tsx?t=1774062117599:33:32)
+    at App.tsx?t=1774062117599:50:5
+    at TN (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:138396)
+    at T8 (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:151856)
+    at T7 (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:151634)
+    at T6 (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:151542)
+    at T4 (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:151420)
+    at S1 (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:163585)
+    at SQ (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:163247)
+    at code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:162379
+    at code_components_preview_iframe-aee2937bf6889db9.min.js.br:65:74721
+    at V (code_components_preview_iframe-aee2937bf6889db9.min.js.br:61:1842)
+    at B (code_components_preview_iframe-aee2937bf6889db9.min.js.br:61:1559)
+    at MessagePort.eo (code_components_preview_iframe-aee2937bf6889db9.min.js.br:61:3433)
+(anonymous) @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:90
+r @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:17
+testConnection @ App.tsx:32
+await in testConnection
+(anonymous) @ App.tsx:36
+TN @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+T8 @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+T7 @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+T6 @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+T4 @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+S1 @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+SQ @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+(anonymous) @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+(anonymous) @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:65
+V @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:61
+B @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:61
+eo @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:61Understand this error
+code_components_preview_iframe-aee2937bf6889db9.min.js.br:90  GET https://images.unsplash.com/photo-1574267432644-f610b8e41aae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY3Rpb24lMjBtb3ZpZSUyMHBvc3RlciUyMGNpbmVtYXRpY3xlbnwxfHx8fDE3NzMxNjM1MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080 404 (Not Found)
+(anonymous) @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:90
+V @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:135
+R @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:135
+A @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:135
+A @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:135
+await in A
+A @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:135
+await in A
+A @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:135
+await in A
+A @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:135
+await in A
+A @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:135
+await in A
+A @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:135
+await in A
+I @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:135
+await in I
+b @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:135
+await in b
+B @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:117
+(anonymous) @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:117
+TN @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+T8 @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+T7 @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+T6 @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+T4 @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+S1 @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+SQ @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+(anonymous) @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:37
+(anonymous) @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:65
+V @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:61
+B @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:61
+eo @ code_components_preview_iframe-aee2937bf6889db9.min.js.br:61Understand this error
+images.unsplash.com/photo-1574267432644-f610b8e41aae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY3Rpb24lMjBtb3ZpZSUyMHBvc3RlciUyMGNpbmVtYXRpY3xlbnwxfHx8fDE3NzMxNjM1MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080:1  Failed to load resource: the server responded with a status of 404 ()Understand this error
+vendor-core-83c17265f2588e9e.min.js.br:63  GET https://www.figma.com/api/integrations/supabase/MVbdUaaTXV0pcdUGtwkKZH/edge_functions/make-server/logs 403 (Forbidden)
