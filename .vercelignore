@@ -1,0 +1,8 @@
+# Figma Make specific files (ignore during Vercel build)
+__figma__entrypoint__.ts
+
+# Not needed for deployment
+.git/
+*.md
+!README.md
+!DEPLOYMENT.md
