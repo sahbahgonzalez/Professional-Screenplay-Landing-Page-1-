@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { X, Save, Trash2, Edit, Plus, Upload, FileText, Lock, GripVertical } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { useAdmin } from "../context/AdminContext";
@@ -34,20 +34,19 @@ interface ContentData {
   posterImage: string;
   synopsisImage: string;
   contactEmail: string;
- copyright: {
-  title: string;
-  subtitle: string;
-  copyrightNotice: {
-    year: string;
-    owner: string;
-    description: string;
+  copyright: {
+    title: string;
+    subtitle: string;
+    copyrightNotice: {
+      year: string;
+      owner: string;
+      description: string;
+    };
+    wgaRegistration: string;
+    copyrightOfficeDate: string;
+    rightsStatement: string;
+    ndaNotice: string;
   };
-  wgaRegistration: string;
-  copyrightOfficeDate: string;
-  rightsStatement: string;
-  ndaNotice: string;
-  disclaimer: string;
-};
 }
 
 interface PitchDeckSlide {
@@ -74,29 +73,25 @@ export function Settings() {
     date: new Date().toISOString().split('T')[0],
     image: ""
   });
-  const snippetEditorRef = useRef<HTMLDivElement>(null);
-
-  const handleSnippetFormat = (command: string, value?: string) => {
-    const editor = snippetEditorRef.current;
-    if (!editor) return;
-
-    editor.focus();
-    if (typeof document !== "undefined" && typeof document.execCommand === "function") {
-      document.execCommand(command, false, value);
-      setSnippetForm((prev) => ({ ...prev, excerpt: editor.innerHTML }));
-    }
-  };
-
-  useEffect(() => {
-    if ((editingSnippet || isAddingSnippet) && snippetEditorRef.current) {
-      snippetEditorRef.current.innerHTML = snippetForm.excerpt || "";
-    }
-  }, [editingSnippet, isAddingSnippet, snippetForm.id]);
 
   // Content state
   const [contentData, setContentData] = useState<ContentData>({
-    logline: "",
-    synopsis: ``,
+    logline: "A investigative journalist stumbles upon a conspiracy that reaches the highest levels of government, forcing her to team up with a former intelligence agent she's been hunting for years—only to discover they're both pawns in a game far more dangerous than either imagined.",
+    synopsis: `Sarah Chen is at the top of her game. A Pulitzer-winning investigative journalist for the Washington Chronicle, she's built her career on exposing corruption and holding the powerful accountable. When she receives an encrypted USB drive containing classified documents, she thinks she's onto another major story.
+
+The documents point to a vast conspiracy involving arms deals, political assassinations, and a shadow network operating within the U.S. intelligence community. At the center of it all is a name she knows well: Marcus Kane, a former CIA operative who went rogue three years ago. Sarah has been trying to expose Kane's crimes for years, publishing article after article about his alleged activities. He's her white whale.
+
+But when Sarah starts following the leads in the documents, people around her start dying. Her source is found dead in an apparent suicide. Her editor receives threats. Someone is watching her every move, and they'll stop at nothing to keep the truth buried.
+
+Sarah is cornered in a parking garage by armed men when Marcus Kane appears out of nowhere to save her. He claims he's not the villain she's made him out to be—he's been investigating the same conspiracy for years, and now they're both targets. Sarah doesn't trust him, but she has no choice. They go on the run together.
+
+As they piece together the puzzle, Sarah learns that Marcus was set up by someone inside the agency. The conspiracy goes deeper than either of them realized, involving high-ranking officials in multiple government agencies. The documents Sarah received were bait, designed to flush out both of them so they could be eliminated.
+
+Despite their mutual distrust, Sarah and Marcus develop a grudging respect for each other. She realizes that many of the stories she wrote about him were based on planted intelligence. He was fighting the good fight all along, but she helped destroy his reputation. The guilt weighs on her as they race to stay alive.
+
+With time running out and their enemies closing in, Sarah and Marcus discover the conspiracy's true scope: a group of powerful individuals planning a false flag operation that would justify a new war and consolidate their power. The attack is set to happen in 48 hours.
+
+They have evidence, but no one they can trust to deliver it to. Every channel is compromised. Sarah makes the bold decision to go public, using her platform and reputation to expose everything in a live broadcast. Marcus provides security and technical support, knowing that once the truth is out, there's no going back.`,
     synopsisThemes: [
       { id: 1, text: "The cost of truth in a world of lies" },
       { id: 2, text: "Redemption and the power of second chances" },
@@ -105,10 +100,10 @@ export function Settings() {
       { id: 5, text: "The role of journalism in holding power accountable" }
     ],
     authorBio: {
-      name: "Mike Surick",
-      title: "Screenwriter",
-      intro1: "",
-      intro2: "",
+      name: "Alexandra Morrison",
+      title: "Screenwriter | Former Investigative Journalist",
+      intro1: "Alexandra Morrison brings a unique perspective to screenwriting, drawing from over fifteen years of experience as an investigative journalist. Her work has appeared in major publications including The Washington Post, The Guardian, and ProPublica, where she covered government accountability, intelligence operations, and political corruption.",
+      intro2: "After winning the Pulitzer Prize for her investigative series on government surveillance programs, Alexandra transitioned to screenwriting to explore these complex themes through compelling narratives that reach wider audiences.",
       photoUrl: ""
     },
     posterImage: "",
@@ -119,17 +114,14 @@ export function Settings() {
       subtitle: "Protecting the intellectual property of \"Truth Protocol\"",
       copyrightNotice: {
         year: "2026",
-        owner: "Mike Surick",
+        owner: "Alexandra Morrison",
         description: "\"Truth Protocol\" is an original screenplay and all associated materials, including but not limited to the story, characters, dialogue, and plot, are protected by United States and international copyright laws."
       },
       wgaRegistration: "Registration #: WGA-2026-XXXXXX",
       copyrightOfficeDate: "January 15, 2026",
       rightsStatement: "No part of this screenplay may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the copyright holder.\n\nAll rights for adaptation into film, television, digital media, or any other format are exclusively retained by the author. Unauthorized adaptations are strictly prohibited.\n\nThe screenplay and all excerpts published on this website are not authorized for commercial use, public performance, or derivative works without express written consent.\n\nIndividuals granted access to the full screenplay agree to maintain its confidentiality and not share, reproduce, or discuss its contents publicly without authorization.",
-      disclaimer: "The content on this website is provided for informational purposes only. The author and website owner make no representations as to the accuracy or completeness of any information on this site or found by following any link on this site. The author will not be liable for any errors or omissions in this information nor for the availability of this information. The author will not be liable for any losses, injuries, or damages from the display or use of this information.",
       ndaNotice: "Requests are reviewed on a case-by-case basis. Depending on the nature of the inquiry, a Non-Disclosure Agreement (NDA) may be required before granting access to the complete screenplay."
     }
-
-
   });
 
   // Pitch deck state
@@ -157,6 +149,11 @@ export function Settings() {
   const [editingEvaluation, setEditingEvaluation] = useState<{ id: number; evaluatorName: string; evaluatorTitle: string; company: string; evaluation: string; date: string } | null>(null);
   const [isAddingEvaluation, setIsAddingEvaluation] = useState(false);
   const [evaluationForm, setEvaluationForm] = useState<{ id: number; evaluatorName: string; evaluatorTitle: string; company: string; evaluation: string; date: string }>({ id: 0, evaluatorName: "", evaluatorTitle: "", company: "", evaluation: "", date: new Date().toISOString().split('T')[0] });
+
+  // Career highlights state
+  const [editingHighlight, setEditingHighlight] = useState<{ id: number; title: string; description: string } | null>(null);
+  const [isAddingHighlight, setIsAddingHighlight] = useState(false);
+  const [highlightForm, setHighlightForm] = useState<{ id: number; title: string; description: string }>({ id: 0, title: "", description: "" });
 
   // Synopsis themes state
   const [editingTheme, setEditingTheme] = useState<{ id: number; text: string } | null>(null);
@@ -203,18 +200,15 @@ export function Settings() {
               title: "Screenwriter | Former Investigative Journalist",
               intro1: "",
               intro2: "",
-              photoUrl: typeof content.authorBio === 'string' ? content.authorBio : ""
+              photoUrl: typeof content.authorBio === 'string' ? content.authorBio : "",
+              careerHighlights: [],
+              professionalBackground: { paragraph1: "", paragraph2: "", paragraph3: "" },
+              inspiration: { paragraph1: "", paragraph2: "", paragraph3: "" }
             });
-
+        
         const normalizedContent: ContentData = {
           logline: typeof content.logline === 'string' ? content.logline : '',
-          synopsis: typeof content.synopsis === 'string'
-            ? content.synopsis
-            : (Array.isArray(content.synopsis)
-                ? content.synopsis
-                    .map((s: { content: string }) => s.content)
-                    .join('\n\n')
-                : ''),
+          synopsis: typeof content.synopsis === 'string' ? content.synopsis : (Array.isArray(content.synopsis) ? content.synopsis.map(s => s.content).join('\n\n') : ''),
           synopsisThemes: Array.isArray(content.synopsisThemes) ? content.synopsisThemes : [],
           authorBio: authorBioData,
           posterImage: typeof content.posterImage === 'string' ? content.posterImage : (typeof content.contactEmail === 'string' ? content.contactEmail : ''),
@@ -308,7 +302,7 @@ export function Settings() {
     }
     
     try {
-      const { projectId, publicAnonKey } = await import('../../../utils/supabase/info');
+      const { projectId, publicAnonKey } = await import('/utils/supabase/info');
       const response = await fetch(`https://${projectId}.supabase.co/functions/v1/make-server-9aaa8c9c/reset-content`, {
         method: 'POST',
         headers: {
@@ -666,6 +660,47 @@ export function Settings() {
     } catch (error) {
       console.error('Failed to delete evaluation:', error);
       toast.error((error as Error).message || 'Failed to delete evaluation');
+    }
+  };
+
+  // Career highlight handlers
+  const handleAddHighlight = () => {
+    setHighlightForm({
+      id: Math.max(...contentData.authorBio.careerHighlights.map(h => h.id), 0) + 1,
+      title: "",
+      description: ""
+    });
+    setIsAddingHighlight(true);
+    setEditingHighlight(null);
+  };
+
+  const handleEditHighlight = (highlight: { id: number; title: string; description: string }) => {
+    setHighlightForm(highlight);
+    setEditingHighlight(highlight);
+    setIsAddingHighlight(false);
+  };
+
+  const handleSaveHighlight = () => {
+    if (isAddingHighlight) {
+      const newHighlights = [...contentData.authorBio.careerHighlights, highlightForm];
+      const newContent = { ...contentData, authorBio: { ...contentData.authorBio, careerHighlights: newHighlights } };
+      saveContent(newContent);
+    } else if (editingHighlight) {
+      const newHighlights = contentData.authorBio.careerHighlights.map(h => 
+        h.id === editingHighlight.id ? highlightForm : h
+      );
+      const newContent = { ...contentData, authorBio: { ...contentData.authorBio, careerHighlights: newHighlights } };
+      saveContent(newContent);
+    }
+    setEditingHighlight(null);
+    setIsAddingHighlight(false);
+  };
+
+  const handleDeleteHighlight = (highlight: { id: number; title: string; description: string }) => {
+    if (confirm(`Are you sure you want to delete the "${highlight.title}" highlight?`)) {
+      const newHighlights = contentData.authorBio.careerHighlights.filter(h => h.id !== highlight.id);
+      const newContent = { ...contentData, authorBio: { ...contentData.authorBio, careerHighlights: newHighlights } };
+      saveContent(newContent);
     }
   };
 
@@ -1918,25 +1953,11 @@ export function Settings() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-2">Excerpt</label>
-                  <div className="mb-3 rounded-lg border border-border bg-muted/30 p-2">
-                    <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Formatting</div>
-                    <div className="flex flex-wrap gap-2">
-                      <button type="button" onClick={() => handleSnippetFormat("bold")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Bold</button>
-                      <button type="button" onClick={() => handleSnippetFormat("italic")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Italic</button>
-                      <button type="button" onClick={() => handleSnippetFormat("underline")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Underline</button>
-                      <button type="button" onClick={() => handleSnippetFormat("justifyCenter")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Center</button>
-                      <button type="button" onClick={() => handleSnippetFormat("indent")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Indent</button>
-                      <button type="button" onClick={() => handleSnippetFormat("outdent")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Outdent</button>
-                    </div>
-                  </div>
-                  <div
-                    ref={snippetEditorRef}
-                    contentEditable
-                    suppressContentEditableWarning
-                    onInput={(e) => setSnippetForm({ ...snippetForm, excerpt: e.currentTarget.innerHTML })}
-                    className="w-full p-3 border border-border bg-input-background rounded-md min-h-[220px] text-foreground outline-none"
-                    style={{ whiteSpace: "pre-wrap" }}
-                    data-placeholder="Type your excerpt here..."
+                  <textarea
+                    value={snippetForm.excerpt}
+                    onChange={(e) => setSnippetForm({ ...snippetForm, excerpt: e.target.value })}
+                    className="w-full p-2 border border-border bg-input-background rounded-md min-h-[200px] text-foreground"
+                    placeholder="Enter the excerpt text"
                   />
                 </div>
               </div>
@@ -2156,6 +2177,73 @@ export function Settings() {
                   onClick={() => {
                     setEditingVisualSlide(null);
                     setIsAddingVisualSlide(false);
+                  }}
+                  variant="outline"
+                  className="flex-1"
+                >
+                  Cancel
+                </Button>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* Career Highlight Edit Modal */}
+      {(editingHighlight || isAddingHighlight) && (
+        <>
+          <div
+            className="fixed inset-0 bg-black/50 z-50"
+            onClick={() => {
+              setEditingHighlight(null);
+              setIsAddingHighlight(false);
+            }}
+          />
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            <div className="bg-card text-card-foreground rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+              <div className="flex items-center justify-between p-6 border-b border-border">
+                <h3 className="text-2xl font-semibold">
+                  {isAddingHighlight ? "Add New Highlight" : "Edit Highlight"}
+                </h3>
+                <button
+                  onClick={() => {
+                    setEditingHighlight(null);
+                    setIsAddingHighlight(false);
+                  }}
+                  className="p-1 hover:bg-muted rounded transition-colors"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+              <div className="p-6 space-y-4">
+                <div>
+                  <label className="block text-sm font-medium mb-2">Title</label>
+                  <input
+                    type="text"
+                    value={highlightForm.title}
+                    onChange={(e) => setHighlightForm({ ...highlightForm, title: e.target.value })}
+                    className="w-full p-2 border border-border bg-input-background rounded-md text-foreground"
+                    placeholder="Enter highlight title"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-2">Description</label>
+                  <textarea
+                    value={highlightForm.description}
+                    onChange={(e) => setHighlightForm({ ...highlightForm, description: e.target.value })}
+                    className="w-full p-2 border border-border bg-input-background rounded-md min-h-[200px] text-foreground"
+                    placeholder="Enter the highlight description"
+                  />
+                </div>
+              </div>
+              <div className="flex gap-2 p-6 border-t border-border">
+                <Button onClick={handleSaveHighlight} className="flex-1">
+                  Save
+                </Button>
+                <Button
+                  onClick={() => {
+                    setEditingHighlight(null);
+                    setIsAddingHighlight(false);
                   }}
                   variant="outline"
                   className="flex-1"
