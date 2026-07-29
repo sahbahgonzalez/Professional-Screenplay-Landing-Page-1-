@@ -1030,7 +1030,10 @@ export function Settings() {
                     <div className="flex-1">
                       <h3 className="text-xl mb-2">{snippet.title}</h3>
                       <p className="text-sm text-muted-foreground mb-2">{snippet.date}</p>
-                      <p className="text-foreground line-clamp-2">{snippet.excerpt}</p>
+                      <div
+  className="text-foreground line-clamp-2"
+  dangerouslySetInnerHTML={{ __html: snippet.excerpt }}
+/>
                     </div>
                     <div className="flex gap-2 ml-4">
                       <Button variant="outline" size="sm" onClick={() => handleEditSnippet(snippet)}>

@@ -148,7 +148,7 @@ export function Home() {
       {/* Latest Excerpt Preview */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl mb-8 text-center">Latest Excerpt</h2>
+          <h2 className="text-3xl md:text-4xl mb-8 text-center text-gray-800">Latest Excerpt</h2>
           <Card className="overflow-hidden">
             {latestSnippet && latestSnippet.image && (
               <div className="h-64 bg-cover bg-center" style={{ backgroundImage: `url('${latestSnippet.image}')` }} />
@@ -166,11 +166,10 @@ export function Home() {
                       })}
                     </span>
                   </div>
-                  <p className="text-foreground mb-4">
-                    {latestSnippet.excerpt.length > 200
-                      ? latestSnippet.excerpt.substring(0, 200) + '...'
-                      : latestSnippet.excerpt}
-                  </p>
+                  <div
+  className="text-foreground mb-4 line-clamp-3"
+  dangerouslySetInnerHTML={{ __html: latestSnippet.excerpt }}
+/>
                 </>
               ) : (
                 <p className="text-foreground mb-4 text-center">
