@@ -136,7 +136,11 @@ export function Snippets() {
                   </span>
                 </div>
                 <h2 className="text-2xl md:text-3xl mb-4">{snippet.title}</h2>
-                <p className="text-lg leading-relaxed whitespace-pre-wrap">{snippet.excerpt}</p>
+
+<div
+  className="text-lg leading-relaxed whitespace-pre-wrap"
+  dangerouslySetInnerHTML={{ __html: snippet.excerpt }}
+/>
                 {isAdmin && (
                   <div className="flex gap-2 mt-4">
                     <Button

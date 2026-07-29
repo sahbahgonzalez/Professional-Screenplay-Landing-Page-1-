@@ -1,4 +1,4 @@
-import { projectId, publicAnonKey } from '/utils/supabase/info';
+import { projectId, publicAnonKey } from '../../../utils/supabase/info';
 
 // Hard-coded values to ensure they work in the build environment
 const SUPABASE_PROJECT_ID = 'xdlmzstbeqakicqhijrk';
