@@ -1925,6 +1925,8 @@ export function Settings() {
                       <button type="button" onClick={() => handleSnippetFormat("italic")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Italic</button>
                       <button type="button" onClick={() => handleSnippetFormat("underline")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Underline</button>
                       <button type="button" onClick={() => handleSnippetFormat("justifyCenter")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Center</button>
+                      <button type="button" onClick={() => handleSnippetFormat("justifyLeft")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Left</button>
+                      <button type="button" onClick={() => handleSnippetFormat("justifyRight")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Right</button>
                       <button type="button" onClick={() => handleSnippetFormat("indent")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Indent</button>
                       <button type="button" onClick={() => handleSnippetFormat("outdent")} className="px-3 py-2 border border-border rounded-md text-sm bg-background hover:bg-muted">Outdent</button>
                     </div>
